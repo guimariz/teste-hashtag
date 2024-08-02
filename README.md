@@ -1,16 +1,20 @@
 ##Automação de Cadastro de Produtos
+
 Este projeto automatiza o processo de cadastro de produtos em um sistema web utilizando Selenium WebDriver com Firefox. Ele lê os dados de um arquivo CSV e preenche automaticamente os campos de um formulário de cadastro no site especificado.
 
 #Pré-requisitos
+
 Python 3.x - Certifique-se de ter o Python instalado no seu sistema. Você pode baixá-lo em: Python Downloads.
 Firefox - Certifique-se de ter o navegador Firefox instalado. Você pode baixá-lo em: Firefox Downloads.
 Geckodriver - Baixe o Geckodriver compatível com a versão do seu Firefox em: Geckodriver Releases.
 Bibliotecas Python - Instale as bibliotecas necessárias executando o comando:
 
 #Instalações
+
 pip install selenium pandas python-dotenv
 
 #Configuração
+
 1. Configurar o Geckodriver
 Baixe e extraia o Geckodriver.
 Coloque o geckodriver.exe em um diretório acessível, por exemplo: F:\dev\utils\geckodriver.exe.
@@ -23,6 +27,7 @@ EMAIL=seu_email
 PASSWORD=sua_senha
 3. Estrutura do Arquivo CSV
 Certifique-se de que o arquivo produtos.csv está no mesmo diretório do script Python e que possui a seguinte estrutura:
+
 csv:
 codigo,marca,tipo,categoria,preco_unitario,custo,obs
 001,Marca A,Tipo A,Categoria A,100,50,Observação A
@@ -30,6 +35,7 @@ codigo,marca,tipo,categoria,preco_unitario,custo,obs
 ...
 
 #Execução do Script
+
 Certifique-se de que o geckodriver está no caminho correto especificado no script.
 Execute o script Python:
 
